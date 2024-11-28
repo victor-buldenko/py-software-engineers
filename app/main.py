@@ -3,7 +3,7 @@ class SoftwareEngineer:
         self.name = name
         self.skills: list[str] = []
 
-    def learn_skill(self, skill) -> None:
+    def learn_skill(self, skill: str) -> None:
         self.skills.append(skill)
 
 
@@ -18,7 +18,7 @@ class FrontendDeveloper(SoftwareEngineer):
 
 
 class BackendDeveloper(SoftwareEngineer):
-    def __init__(self, name) -> None:
+    def __init__(self, name: str) -> None:
         super().__init__(name)
         self.skills.extend(["Python", "SQL", "Django"])
 
